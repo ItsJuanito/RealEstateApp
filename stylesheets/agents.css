@@ -47,7 +47,6 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     font-size: 2.5rem;
     color: #407BAF;
     margin-bottom: 1rem;
@@ -92,8 +91,7 @@ p.large-paragraph {
 
 /* start: header styles */
 #header-hero-container {
-    min-height: 600px;
-    height: calc(100vh);
+    min-height: 30px;
     position: relative;
 }
 
@@ -103,14 +101,14 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
     width: 100%;
-    z-index: 3;
+    /*z-index: 3;*/
 }
 
 #logo {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     font-size: 1.7rem;
     font-weight: 800;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     position: relative;
     top: 4px;
@@ -158,57 +156,19 @@ header ul.is-sticky li a {
 
 header ul li a:hover,
 header ul li a.active {
-    color: #fff;
+    color: #000;
 }
 
 header ul.is-sticky li a:hover,
 header ul.is-sticky li a.active {
     color: #407BAF;
 }
-/* end: header styles */
 
-/* start: hero section styles */
-#hero {
-    background: url('https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg') center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-
-#hero .fade {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(52, 58, 64, 0.9);
-    z-index: 1;
-}
-
-#hero .hero-text {
-    position: absolute;
-    top: 50%;
-    margin: -75px auto 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    color: #fff;
-    width: 500px;
-    text-align: center;
-}
-
-#hero .hero-text p {
-    line-height: 1.5em;
-    font-weight: 300;
-    font-size: 1rem;
-}
-/* end: hero section styles */
 
 /* start: agents styles */
+#agents .container h2 {
+    text-align: center;
+}
 #agents {
     margin: 4rem 0 6rem;
     padding: 0 0 6rem;
@@ -246,136 +206,6 @@ header ul.is-sticky li a.active {
     padding-left: 1rem;
 }
 /* end: agents styles */
-
-/* start: services styles */
-#services {
-    background: #f8f9fa;
-    padding: 6rem 0;
-    margin: 8rem 0;
-    border-bottom: 1px solid #dee2e6;
-}
-
-#services h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-#services .flex {
-    flex-wrap: wrap;
-}
-
-#services .flex > div {
-    width: 30%;
-    margin-bottom: 2rem;
-}
-
-#services .flex > div .fas {
-    color: #407BAF;
-    font-size: 40px;
-    float: left;
-    margin-top: 15px;
-    width: 20%;
-    text-align: center;
-}
-
-#services .flex > div .services-card-right {
-    float: right;
-    width: 75%;
-}
-
-#services .flex > div a {
-    color: #407BAF;
-    text-decoration: none;
-}
-
-#services .flex > div a:hover {
-    text-decoration: underline;
-}
-/* end: services styles */
-
-/* start: contact us styles */
-#contact {
-    background: #f8f9fa;
-    padding: 4rem 0 8rem;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#form-container {
-    width: 58%;
-    background: #fff;
-    padding: 3rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#form-container h3 {
-    color: #000;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 2rem;
-}
-
-#form-container label {
-    display: block;
-    color: #000;
-    margin-top: 1rem;
-}
-
-#form-container input,
-#form-container textarea {
-    display: block;
-    border-radius: 20px;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    width: 100%;
-    box-sizing: border-box;
-    height: 43px;
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1rem;
-    color: #495057;
-}
-
-#form-container textarea {
-    height: 170px;
-    margin-bottom: 2rem;
-    resize: none;
-}
-
-#address-container {
-    width: 38%;
-    background: #fff;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#address-container label {
-    font-weight: 700;
-    display: block;
-    margin-top: 2rem;
-}
-
-#address-container label:first-child {
-    margin-top: 0;
-}
-
-#address-container address {
-    margin-bottom: 1.5rem;
-    font-style: normal;
-}
-
-#address-container a {
-    text-decoration: none;
-    color: #407BAF;
-}
-
-#address-container a:hover {
-    text-decoration: underline;
-}
-/* end: contact us styles */
 
 /* start: footer styles */
 footer {
@@ -604,6 +434,10 @@ footer small a:hover {
         width: 100%;
     }
 
+    #testimonials-slider p {
+        font-size: 1.2rem;
+    }
+
     #services .flex > div {
         width: 48%;
     }
@@ -658,32 +492,6 @@ footer small a:hover {
         width: 330px;
     }
 
-    #agents {
-        margin: 4rem 0 3rem;
-        padding: 0 0 3rem;
-    }
-
-    #agents .card {
-        width: 100%;
-    }
-
-    #agents p.large-paragraph {
-        width: 100%;
-    }
-
-    #how-it-works .flex {
-        display: block;
-    }
-
-    #how-it-works .flex > div {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    #properties button.rounded {
-        width: 250px;
-    }
-
     #services {
         padding: 4rem 0 3rem;
         margin: 4rem 0;
@@ -691,14 +499,6 @@ footer small a:hover {
 
     #services .flex > div {
         width: 100%;
-    }
-
-    #contact {
-        padding: 4rem 0;
-    }
-
-    #contact h2 {
-        margin-bottom: 2rem;
     }
 
     #form-container {
@@ -721,3 +521,4 @@ footer small a:hover {
   }
 }
 /* end: media queries */
+  
