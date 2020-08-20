@@ -18,7 +18,7 @@
     <div id="header-hero-container">
         <header>
             <div class="flex container">
-                <a id="logo" href="index.html">ProperT</a>
+                <a id="logo" href="#top">ProperT</a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -27,11 +27,10 @@
                     </button>
 
                     <ul id="nav-menu">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#top" class="active">Home</a></li>
                         <li><a href="properties.html">Properties</a></li>
                         <li><a href="agents.html">Agents</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#bottom">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
@@ -76,7 +75,7 @@
         <div class="container">
             <h2>Properties</h2>
             <div id="properties-slider" class="slick">
-                <div>
+                <div class="property-item">
    <!--My Edit--> <a href="#">
                     <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
                   </a>
@@ -105,74 +104,8 @@
                         </address>
                     </div>
                 </div>
-
-                <div>
-                    <a href="#">
-                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
-                    </a>
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div> <a href="#">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 1" />
-                </a>
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-
-                <div>
-                    <a href="#">
-                        <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
-                    </a>
-                    <div class="property-details">
-                        <p class="price">$3,400,000</p>
-                        <span class="beds">6 beds</span>
-                        <span class="baths">4 baths</span>
-                        <span class="sqft">4,250 sqft.</span>
-                        <address>
-                            480 12th, Unit 14, San Francisco, CA
-                        </address>
-                    </div>
-                </div>
-            </div>
-
-            <a href="properties.html" class="rounded">View All Property Listings</a>
         </div>
-    </section>
-
-
-    <section id="the-best">
-        <div class="flex container">
-            <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
-            <div>
-                <h2>We Are the Best Real Estate Company</h2>
-                <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
-                <ul>
-                    <li>Placeat maxime animi minus</li>
-                    <li>Placeat maxime animi minus</li>
-                    <li>Placeat maxime animi minus</li>
-                    <li>Placeat maxime animi minus</li>
-                    <li>Placeat maxime animi minus</li>
-                </ul>
-                <button class="rounded">Learn More</button>
-            </div>
-        </div>
+        <a href="properties.html" class="rounded">View All Property Listings</a>
     </section>
 
     <section id="services">
@@ -236,47 +169,6 @@
         </div>
     </section>
 
-   
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-
-            <div class="flex">
-                <div id="form-container">
-                    <h3>Contact Form</h3>
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" />
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" />
-
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" />
-
-                        <label for="message">Message</label>
-                        <textarea id="message">Write your message here..</textarea>
-
-                        <button class="rounded">Send Message</button>
-                    </form>
-                </div>
-
-                <div id="address-container">
-                    <label>Address</label>
-                    <address>
-                        20377 Evergreen Terrace Mountain View, California, USA 
-                    </address>
-
-                    <label>Phone</label>
-                    <a href="#">232-232-2323</a>
-
-                    <label>Email Address</label>
-                    <a href="#">ouremail@domain.com</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="flex container">
             <div class="footer-about">
@@ -312,23 +204,98 @@
         </div>
 
         <small>
-            Copyright &copy; 2019 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
+            Copyright &copy; 2019 All rights reserved | Made by <a href="https://github.com/ItsJuanito">ItsJuanito</a>
         </small>
     </footer>
 
     <script>
-        $(function () {
-    let headerElem = $('header');
-    let logo = $('#logo');
-    let navMenu = $('#nav-menu');
-    let navToggle = $('#nav-toggle');
 
-   $('#properties-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
-        nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
-        responsive: [
+            /*JSON info*/
+
+    const houses = [{   
+    image: "./img/image1.jpg",
+    price: "$559,000",
+    beds: "4",
+    baths: "3",
+    length: "4,250 sqft.",
+    address: "3292 E. Avalon St. Los Angeles, CA"
+}, {   
+    image: "./img/image2.jpg",
+    price: "$690,000",
+    beds: "3",
+    baths: "2",
+    length: "2,634 sqft.",
+    address: "1215 Claire Dr. Palo Alto, CA"
+}, {   
+    image: "./img/image3.jpg",
+    price: "$519,000",
+    beds: "5",
+    baths: "4",
+    length: "5,389 sqft.",
+    address: "1734 Roe St. San Diego, CA"
+}, {   
+    image: "./img/image4.jpg",
+    price: "$610,000",
+    beds: "4",
+    baths: "3",
+    length: "4,823 sqft.",
+    address: "2392 Orange St. San Jose, CA"
+}, {   
+    image: "./img/image5.jpg",
+    price: "$530,000",
+    beds: "2",
+    baths: "2",
+    length: "2,250 sqft.",
+    address: "1922 Freemont St. San Fransisco, CA"
+}, {   
+    image: "./img/image6.jpg",
+    price: "$523,000",
+    beds: "2",
+    baths: "2",
+    length: "2,250 sqft.",
+    address: "1920 Freemont St. San Fransisco, CA"
+}, {   
+    image: "./img/image7.jpg",
+    price: "$670,000",
+    beds: "5",
+    baths: "4",
+    length: "5,352 sqft.",
+    address: "3092 Second St. Los Angeles, CA"
+}];
+
+document.getElementById('properties-slider').innerHTML = `${houses.map(getTemplate).join('')}`;
+
+
+function getTemplate(house) {
+    return `
+    <div class="properties-item">
+        <a href="#">
+            <img src="${house.image}" height="350px" width="250px"></img>
+        </a>
+        <div class="property-details">
+        <p class="price">Price: ${house.price}</p>
+        <span class="beds">Beds: ${house.beds}</span>
+        <span class="baths">Baths: ${house.baths}</span>
+        <span class="sqft">${house.length}</span>
+        <address class="address">
+            ${house.address}
+        </address>
+    </div>
+    </div>`;
+}
+
+    $(function () {
+        let headerElem = $('header');
+        let logo = $('#logo');
+        let navMenu = $('#nav-menu');
+        let navToggle = $('#nav-toggle');
+
+        $('#properties-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+            nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+            responsive: [
             {
                 breakpoint: 1100,
                 settings: {
@@ -397,10 +364,17 @@
        }
 
        headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
-   });
+    });
 
-   $(document).trigger('scroll');
-});
+        $(document).trigger('scroll');
+    });
+
+    function sendContact() {
+        let send = document.getElementById('send').innerHTML = `Sent`;
+        let sent = document.getElementById('send').style.backgroundColor = "green";
+        setTimeout(function(){ location.reload(); alert('Message sent successfully'); }, 3000);
+    }
+
     </script>
 </body>
 </html>
